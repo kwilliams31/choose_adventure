@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+<link rel="stylesheet" href="/styles/styles.css">
+<!-- <link rel="stylesheet" href="/styles/styles.css"> -->
+
+</head>
+
+<!-- <img src="/photos/campus.jpg" id="campus"> -->
+
+
+<body class="container">
+  
+  <div class="row">
+    
+    <div class="col-md-8 offset-md-2">
+      <h1>Hello! Welcome to choose your own adventure game: UNA</h1>
+      <p id="explain">
+        This story game will allow you to find secrets about UNA while deciding what to do around campus! <br><br> To begin, please enter your name and click "ready"  to start your adventure. <br><br> If you have already played and want to see your secrets, click the "check you status" to see/update your secrets.
+      </p>
+
+    </div>
+  </div> 
+
+
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+        <div class="card">
+      <form method="POST" action="/addName">
+        <label for="name">Enter your name and click ready when done to start your story!</label>
+        
+        <input id="userInput" name="name" placeholder="new name">
+        <br>
+        <br>
+        <input type="submit" value="add your name" />
+      </form>
+      <br>
+
+      <form method="GET" action="/storyPage">
+        <input type="submit" value="ready!" />
+      </form>
+      <br>
+      <form method="GET" action="/statusPage">
+        <input type="submit" value="check your status" />
+      </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <p>App by: Kristina Williams</p>
+  <a href="https://github.com/mskel1/unaAdventures/wiki/meet-the-devs" target="_blank">Meet the devs</a>
+  <a href="https://github.com/mskel1/unaAdventures" target="_blank">Source Code</a>
+  <a href="https://mskel1.github.io/unaAdventures/" target="_blank">ReadMe</a>
+    </div>
+  </footer>
+
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script><script  src="./scripts/script.js"></script>
+
+</body></html>
